@@ -1,0 +1,77 @@
+.content-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: 2px dashed blueviolet;
+  border-radius: 8px;
+}
+
+/* 콘텐츠 카드 크기 지정 */
+.content-card {
+  width: 160px;
+  height: 240px;
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  background-color: #fff;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.content-card:focus {
+  border: 1px solid #2962ff;
+}
+
+/* 썸네일 영역 고정 */
+.thumbnail {
+  position: relative;
+  width: 100%;
+  height: 60%; /* 60% 이미지, 40% 텍스트 영역 */
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.thumb-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.thumb-character {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* 텍스트 영역 */
+.card-body {
+  height: 40%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 2px;
+}
+
+.card-desc {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 2px;
+}
+
+.card-genre {
+  font-size: 11px;
+  color: #999;
+}

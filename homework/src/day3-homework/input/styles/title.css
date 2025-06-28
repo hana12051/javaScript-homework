@@ -1,0 +1,56 @@
+/* 추천 링크 카드 그룹 */
+.link-card-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 2px dashed blueviolet;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+/* 추천 게임 링크 카드 */
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  width: fit-content;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 마우스 오버 시 */
+.link-card:hover {
+  background-color: #e0e0e0;
+}
+
+/* 키보드 포커스 시 */
+.link-card:focus {
+  outline: 2px solid #2962ff;
+  outline-offset: 2px;
+  background-color: #fff;
+}
+
+/* 링크 안의 이미지 아이콘 */
+.link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 텍스트 */
+.link-text {
+  flex-shrink: 0;
+}
+
+/* 오른쪽 화살표 */
+.link-arrow {
+  margin-left: auto;
+  font-size: 14px;
+}
