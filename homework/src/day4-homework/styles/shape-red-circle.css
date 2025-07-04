@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 오른쪽 도형 영역 */
+.hero__graphics {
+  position: relative;
+  width: 500px;
+  height: 700px;
+}
+
+/* 공통 도형 스타일 */
+.shape {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 도형 개별 배치 */
+.shape--01 {
+  width: 125px;
+  height: 125px;
+  top: 0;
+  right: 0;
+  background-image: url('./shape-red-circle/shape-01.svg');
+}
+
+.shape--02 {
+  width: 125px;
+  height: 125px;
+  top: 140px;
+  right: 60px;
+  background-image: url('./shape-red-circle/shape-02.svg');
+}
+
+/* ... shape--03, shape--04 등 추가 ... */
