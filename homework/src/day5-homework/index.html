@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <title>타입어헤드(Typeahead)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <!-- ✅ 모듈 타입으로 연결 -->
+  <script type="module" src="./scripts/main.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <h1>타입어헤드(Typeahead)</h1>
+    <p>아래 검색 필드에 나라 이름을 입력해보세요. ✨</p>
+
+    <form autocomplete="off">
+      <div class="typeahead">
+        <input type="search" name="country" id="country" />
+        <!-- ✅ 반드시 id="suggestions" 필요 -->
+        <ul id="suggestions" hidden></ul>
+      </div>
+    </form>
+</body>
+</html>

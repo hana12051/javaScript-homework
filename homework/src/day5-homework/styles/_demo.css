@@ -1,0 +1,28 @@
+:root {
+  font-family: Pretendard, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: var(--blue-gray-700);
+}
+
+.wrap {
+  position: relative;
+  max-width: 29rem;
+  margin: auto;
+  padding-inline: 1rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--blue-gray-900);
+    
+    & + p {
+      margin-top: 1rem;
+      color: var(--blue-700);
+    }
+  }
+}
