@@ -5,3 +5,25 @@
 @import './components/_typeahead.css' layer(components);
 
 @import './_demo.css';
+
+#suggestions {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background: white;
+  margin-top: 4px;
+  padding: 0;
+  list-style: none;
+}
+
+#suggestions li {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+#suggestions li.highlighted {
+  background-color: #f0f0f0;
+  color: #000;
+  border-left: 4px solid limegreen; /* ✅ 왼쪽 초록색 막대 */
+  padding-left: calc(0.5em - 4px);   /* ✅ 들여쓰기 보정 */
+}
